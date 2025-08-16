@@ -5,7 +5,7 @@ public class Example {
         Employee emp = new Employee("Halit","Kalaycı","123",50,"Yazılım");
 
         Employee emp1 = new Employee();
-        emp1.setFirstName("S");
+        emp1.setFirstName("Su");
         System.out.println(emp1.getFirstName());
     }
 }
