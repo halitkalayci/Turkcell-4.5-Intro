@@ -5,7 +5,8 @@ public class Car
 {
     public String brand;
     public String model;
-    public int year;
+    // Direkt erişime kapatmak.
+    private int year;
     public float km;
     // Her nesnenin içinde ctor oto. oluşturulur.
     // Ama istersek manuel kendi ctor'ımızı yazabiliriz.
@@ -30,6 +31,24 @@ public class Car
     public void endRent() {
         System.out.println("Kiralama bitiriliyor.");
     }
+
+
+    // getter-setter methods
+    //setter
+    public void setYear(int year){
+        if (year < 2000)
+        {
+            System.out.println("Yıl 2000'den küçük olamaz");
+            return;
+        }
+        this.year = year;
+    }
+    public int getYear(){
+        return this.year;
+    }
+    //
+
+
 }
 // Erişim Belirleyiciler
 // public => Bu class diğer tüm classlardan erişilebilsin.
