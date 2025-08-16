@@ -3,27 +3,29 @@ package com.turkcell;
 // OOP 'de temsil edeceğimiz nesnenin kalıbı.
 public class Car
 {
+    public String brand;
+    public String model;
+    public int year;
+    public float km;
     // Her nesnenin içinde ctor oto. oluşturulur.
     // Ama istersek manuel kendi ctor'ımızı yazabiliriz.
 
     // All-Args-Ctor
-    public Car(String brand) {
-        System.out.println("1. Ctor bloğu.");
+    public Car(String brand, String model, int year, float km) {
+        this.brand = brand; // this -> Classın kendisini ifade eder.
+        this.model = model;
+        this.year = year;
+        this.km = km;
     }
     // No-Args-Ctor
-    public Car()  {
+    public Car() {
         System.out.println("2. ctor bloğu");
     }
     // Method Overloading
 
 
-    public String brand;
-    public String model;
-    public int year;
-    public float km;
-
     public void startRent(){
-        System.out.println("Kiralama başlatılıyor.");
+        System.out.println("Kiralama başlatılıyor: " + this.brand);
     }
     public void endRent() {
         System.out.println("Kiralama bitiriliyor.");

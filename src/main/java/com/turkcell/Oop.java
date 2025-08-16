@@ -5,11 +5,11 @@ public class Oop {
         // Her class aynı zamanda yeni bir veri türü.
         int a = 1;
         // Constructor - Yapıcı blok
-        Car car1 = new Car("Honda"); // Instance
-        car1.brand = "Honda";
-        car1.model = "Civic";
-        car1.km = 100;
-        car1.year = 2025;
+        Car car1 = new Car(
+                "Honda",
+                "Civic",
+                2025,
+                100); // Instance
         car1.startRent();
         // new -> O classtan yeni bir "instance" üretir.
 
