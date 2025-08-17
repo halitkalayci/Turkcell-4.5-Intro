@@ -7,10 +7,11 @@ import java.util.List;
 
 
 // UserDal, UserDao
-public class UserRepository implements BaseUserRepository
+public class UserRepository implements BaseRepository<User>
 {
     // In-Memory
     List<User> users = new ArrayList<>();
+
 
     public List<User> findAll() {
         return users;
@@ -25,5 +26,10 @@ public class UserRepository implements BaseUserRepository
 
     public void save(User user) {
         users.add(user);
+    }
+
+    @Override
+    public void delete(User user) {
+
     }
 }

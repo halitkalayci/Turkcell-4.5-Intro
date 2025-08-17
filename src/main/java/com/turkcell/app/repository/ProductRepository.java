@@ -5,7 +5,7 @@ import com.turkcell.app.entity.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductRepository implements BaseProductRepository
+public class ProductRepository implements BaseRepository<Product>
 {
     List<Product> products = new ArrayList<Product>();
 
@@ -18,6 +18,11 @@ public class ProductRepository implements BaseProductRepository
     }
 
     public void save(Product user) {
+
+    }
+
+    @Override
+    public void delete(Product product) {
 
     }
 }
