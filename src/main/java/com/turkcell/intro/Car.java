@@ -1,4 +1,4 @@
-package com.turkcell;
+package com.turkcell.intro;
 
 // Superclass-> Kalıtım alınan class (Vehicle)
 // Subclass -> Kalıtım yapan class (Car)

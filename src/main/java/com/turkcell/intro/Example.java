@@ -1,4 +1,4 @@
-package com.turkcell;
+package com.turkcell.intro;
 
 public class Example {
     public static void main(String[] args) {

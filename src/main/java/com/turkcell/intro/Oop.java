@@ -1,6 +1,4 @@
-package com.turkcell;
-
-import javax.xml.crypto.Data;
+package com.turkcell.intro;
 
 public class Oop {
     public static void main(String[] args) {
@@ -27,7 +25,9 @@ public class Oop {
         c.getDoorCount();
 
 
-        DatabaseHelper.connect("admin","admin123");
-        DatabaseHelper.connect("admin","123456","jdbc://localhost:3306");
+        DatabaseHelper
+                .connect("admin","admin123");
+        DatabaseHelper
+                .connect("admin","123456","jdbc://localhost:3306");
     }
 }
