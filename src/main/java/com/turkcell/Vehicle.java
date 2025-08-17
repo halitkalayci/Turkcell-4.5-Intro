@@ -17,6 +17,10 @@ public class Vehicle
         this.km = km;
     }
 
+    public void startRent() {
+        System.out.println("Renting Vehicle");
+    }
+
     public String getBrand() {
         return brand;
     }
