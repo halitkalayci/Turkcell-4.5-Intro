@@ -4,7 +4,7 @@ import com.turkcell.app.entity.Product;
 
 import java.util.List;
 
-public class MssqlProductRepository implements BaseProductRepository{
+public class MssqlProductRepository implements BaseRepository<Product>{
     @Override
     public List<Product> findAll() {
         return List.of();
@@ -17,6 +17,11 @@ public class MssqlProductRepository implements BaseProductRepository{
 
     @Override
     public void save(Product user) {
+
+    }
+
+    @Override
+    public void delete(Product product) {
 
     }
 }
