@@ -3,6 +3,8 @@ package com.turkcell.app;
 import com.turkcell.app.entity.User;
 import com.turkcell.app.repository.UserRepository;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         // Genel veritabanı.
@@ -21,5 +23,11 @@ public class Main {
         user2.setName("Turkcell1");
 
         userRepository.save(user2);
+
+        List<User> users = userRepository.findAll();
+
+        for (User user1: users){
+            System.out.println(user1.getName());
+        }
     }
 }

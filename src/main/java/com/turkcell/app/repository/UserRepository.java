@@ -7,7 +7,7 @@ import java.util.List;
 
 
 // UserDal, UserDao
-public class UserRepository
+public class UserRepository implements BaseUserRepository
 {
     // In-Memory
     List<User> users = new ArrayList<>();
